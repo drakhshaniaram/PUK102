@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="themes/ynk(kakAlan).min.css" />
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+<div data-role="page" id="splash"> 
+  <div class="splash">
+    <p><img src="images/splash.jpg" id="splashImg" alt="Splash Image" />
+      <script type='text/javascript'>//<![CDATA[ 
+            $(window).load(function(){
+            $(function() {
+                setTimeout(hideSplash, 3000);
+                        });	
+
+            function hideSplash() {
+            $.mobile.changePage("#home", "fade");
+			$(".splash").remove();
+            }
+
+			jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - this.outerHeight()) / 2) +
+                                                $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - this.outerWidth()) / 2) +
+                                                $(window).scrollLeft()) + "px");
+    return this;
+}
+$("#splashImg").center();
+            });//]]>  
+        </script>
+    </p>
+
+  </div>
+ </div>
+<div data-role="page" id="home">
+<audio src="Min-yeketim.mp3" autoplay="true" loop></audio>
+	<div data-role="header">
+		<h1>کاندیدەکانی لیستی یەکێتی نیشتمانی</h1>
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">سەرەکی</a>
+	</div><!-- /header -->
+	<div data-role="content">
+    		<div id="part1"><img src="images/splash.jpg" /><br /><img src="images/2.jpg" /></div>
+            <div id="part2">
+                <p><h2>دروشمەکان</h2>
+                <ol>
+                    <li>خانوە قوڕەکان، مەیدانی خەباتی ئاوەدانیمانە.</li>
+                    <li>لیستی یەکێتی، لیستی مافی چارەنووس و داهاتووی نەتەوەی کوردە.</li>
+                    <li>لیستی 102 شەفافیەتی نەوت و بودجەیە.</li><li>یەکێتیئ لیستی نوێبونەوە و داهێنانە.</li><li>یەکێتی مینبەری ئازاد و ڕادەربڕینە رادةربرِينة</li><li>دڵنیابە هیواکانت بە لیستی 102 بسپێرە</li><li>یاسا سەروەری و ئازادی پەروەری ئامانجی لیستی 102 ە</li>
+                </ol>
+                </p>
+            </div>
+            <div id="part3">
+            	<h1>لیستی کاندیدەکانی لیستی 102</h1>
+                
+            </div>	
+	</div>
+	<div data-role="footer">
+		<h4>دەنگی هەمومان: یەکێتی نیشتمانی کوردستانە</h4>
+	</div>
+</div>
+
+
+
+</body>
+</html>
