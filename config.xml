@@ -9,4 +9,5 @@
 </description>
 <author href="https://www.symbiansoftgroup.com" email="drakhshani.aram@gmail.com">
 </author>
+<access origin="*" />
 </widget>
