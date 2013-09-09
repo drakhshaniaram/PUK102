@@ -46,7 +46,7 @@ body {
 	margin: 0 auto;
 }
 #part1 {
-	margin: 0 auto;
+	padding:5px;
 	margin-bottom: 20px;
 }
 #part1 img {
@@ -60,5 +60,3 @@ body {
 	font-size: 2em;
 	font-family: tahoma;
 }
-#part3 img{
-	min-width:45%;}
