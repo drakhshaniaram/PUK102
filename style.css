@@ -46,10 +46,10 @@ body {
 	margin: 0 auto;
 }
 #part1 p{
-	padding:5px;
+	padding:20px;
 	margin-bottom: 20px;
 }
-#part1 img {
+#part1 p img {
 	min-width: 100%;
 }
 #part2 {
