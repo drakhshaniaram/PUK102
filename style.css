@@ -1,5 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
+@font-face {
+    font-family: 'UniQAIDAR_SAMi';
+    src: url('themes/font/UniQAIDAR_SAMi.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Android jQM Font Style Overrides */
+body  * {
+    font-family: "UniQAIDAR_SAMi" !important;
+    font-weight: normal !important;
+  }
 body {
 	font-size: 62.5%;
 	direction: rtl
@@ -44,8 +56,8 @@ body {
 .splash img {
 	margin: 0 auto;
 }
-#part1 p{
-	padding:20px;
+#part1 p {
+	padding: 2px;
 	margin-bottom: 20px;
 }
 #part1 p img {
@@ -59,10 +71,19 @@ body {
 	font-size: 2em;
 	font-family: tahoma;
 }
-#details{
-	font-size:1.9em;
-	padding:20px;}
-#header{
-	border-bottom:1px solid #14992a;
-	color:#14992a
-		}
+#details {
+	font-size: 1.9em;
+	padding: 20px;
+}
+#header {
+	border-bottom: 1px solid #14992a;
+	color: #14992a;
+}
+.jhmare {
+	color: #14992a;
+}
+.det_header{
+	color:#14992a;
+	border-bottom:1px solid #666;
+	display:block;
+	}
