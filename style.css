@@ -69,10 +69,14 @@ body {
 	color: #FFF;
 	line-height: 2.2em;
 	word-spacing: 0.2em;
-	font-size: 2em;
+	font-size: 1.7em;
 	border-bottom: 5px solid #fff;
 	clear: both;
 }
+.part2 h3{
+		font-size: 2em;
+
+	}
 #part4 {
 	background: #3ba948;
 	color: #fff;
