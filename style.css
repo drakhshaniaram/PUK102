@@ -2,16 +2,22 @@
 /* CSS Document */
 @font-face {
 	font-family: 'UniQAIDAR_SAMi';
- src: url('themes/font/UniQAIDAR_SAMi.ttf') format('truetype'), font-weight: normal;
+	src: url(themes/font/UniQAIDAR_SAMi.ttf) format('truetype'), font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Unikuweb';
+	src: url(themes/font/Unikuweb.ttf) format('truetype'), font-weight: normal;
+	font-style: normal;
+}
+
 /* Android jQM Font Style Overrides */
 body * {
-	font-family: "UniQAIDAR_SAMi", tahoma, Arial, veletica !important;
+	font-family: "UniQAIDAR_SAMi", "Unikuweb", tahoma, Arial, veletica !important;
 	font-weight: normal !important;
 }
 body {
-	font-family: "UniQAIDAR_SAMi", tahoma, Arial, veletica !important;
+	font-family: "UniQAIDAR_SAMi", "Unikuweb", tahoma, Arial, veletica !important;
 	font-size: 62.5%;
 	direction: rtl
 }
@@ -48,6 +54,8 @@ body {
 .splash img {
 	margin: 0 auto;
 }
+.h3_header{
+	border-bottom: 1px solid #6C9}
 #part1 p {
 	padding: 2px;
 	margin-bottom: 20px;
@@ -57,13 +65,11 @@ body {
 }
 .part2 {
 	padding: 20px;
-	text-align: right;
 	background: #178742;
 	color: #FFF;
 	line-height: 2.2em;
 	word-spacing: 0.2em;
 	font-size: 2em;
-	font-family: tahoma;
 	border-bottom: 5px solid #fff;
 	clear: both;
 }
